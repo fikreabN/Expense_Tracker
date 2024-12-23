@@ -291,7 +291,6 @@ const fscrtnwmnthbtnfunc = () => {
             "no": 0,
             "nm": 0,
             "expns": {
-                
             }
         }
         localStorage.setItem("monthObj", str(monthObj));
@@ -380,14 +379,7 @@ const fscrtnwmnthbtnfunc = () => {
         alert ("Enter your income in the provided place!")
     }
 }
-
 fscrtnwmnthbtn.addEventListener("click",fscrtnwmnthbtnfunc)
-
-
-
-
-// localStorage.clear()
-
 sccrtnwmnthbtn.addEventListener("click", () => {
     monthObj = des(localStorage.getItem("monthObj"));
     nm = parseFloat(Object.keys(monthObj['k'])[Object.keys(monthObj['k']).length -1]) + 1
@@ -1361,7 +1353,6 @@ months.addEventListener("click", (evnt)=> {
                                     <button class="editspend " id="${i}edit${l}spend${f}">edit</button>
                                 </div>
                             `
-                            console.log("sh")
                             expncont.appendChild(newday)
                             document.getElementById(`${i}spend${l}mnyshow${f}`).style.display = "inline"
                         }
@@ -1522,104 +1513,3 @@ months.addEventListener("click", (evnt)=> {
         }  
     }
 })
-
-
-
-
-
-// monthObj = des(localStorage.getItem("monthObj"))
-// monthObj[`month1`][`expns`][`1expn1`]["details"][Object.keys(monthObj[`month1`][`expns`][`1expn1`]["details"])[4]] = 2500;
-// localStorage.setItem("monthObj", str(monthObj))
-
-
-////////////////////////////////////////
-
-// for(let i = 0; i < document.querySelectorAll(".yes").length; i++) {
-//     if (document.querySelectorAll(".yes")[i].id === "yes" + (i+1)){
-//         document.querySelectorAll(".yes")[i].addEventListener("click", () => {
-            
-//         })
-//     }
-// }
-
-// for(let i = 0; i < document.querySelectorAll(".no").length; i++) {
-//     if (document.querySelectorAll(".no")[i].id === "no" + (i+1)){
-//         document.querySelectorAll(".no")[i].addEventListener("click", () => {
-//             document.querySelectorAll(".dia")[i].close();
-//         })
-//     }
-// }
-
-
-// for(let i = 0; i < document.querySelectorAll(".crtnwmnthfrmbtn").length; i++) {
-//     if (document.querySelectorAll(".crtnwmnthfrmbtn")[i].id === "crtnwmnthfrmbtn" + (i+2)){
-//         document.querySelectorAll(".crtnwmnthfrmbtn")[i].addEventListener("click", () => {
-//             if (document.querySelectorAll(".crtnwmnthfrminp")[i].value){
-//                 if (document.querySelectorAll(".crtnwmnthfrminp")[i].value > 0){
-//                     document.querySelectorAll(".crtnwmnthfrm");[i].style.display = "none";
-//                     mnyprvdiv[i+1].classList.remove('none');
-//                     document.querySelectorAll(".bfcrtnwexpn")[i+1].classList.remove('none')
-//                 } else {
-//                     alert ("Enter a Value Greater than 0!");
-//                 }
-//             } else {
-//                 alert ("Enter a Value in the Provided place!");
-//             }
-            
-//         })
-//     }
-// }
-
-// for(let i = 0; i < document.querySelectorAll(".bfcrtnwexpn").length; i++) {
-//     if (document.querySelectorAll(".bfcrtnwexpn")[i].id === "bfcrtnwexpn" + (i+1)){
-//         document.querySelectorAll(".bfcrtnwexpn")[i].addEventListener("click", () => {
-//         })
-//     }
-// }
-
-// for(let i = 0; i < document.querySelectorAll(".nwexpnslct").length; i++) {
-//     if (document.querySelectorAll(".nwexpnslct")[i].id === "nwexpnslct" + (i+1)){
-//         document.querySelectorAll(".nwexpnslct")[i].addEventListener("change", () => {
-            
-//         })
-//     }
-// }
-
-// for(let i = 0; i < document.querySelectorAll(".wlcrtnwexpn").length; i++) {
-//     if (document.querySelectorAll(".wlcrtnwexpn")[i].id === "wlcrtnwexpn" + (i+1)){
-//         document.querySelectorAll(".wlcrtnwexpn")[i].addEventListener("click", () => {
-            
-//         })
-//     }
-// }
-
-
-// document.getElementById('dltmnth1').addEventListener('click', ()=>{console.log("yay")})
-// for(let i = 0; i < document.querySelectorAll(".dltmnth").length; i++) {
-//     if (document.querySelectorAll(".dltmnth")[i].id === "dltmnth" + (i+1)){
-//         document.querySelectorAll(".dltmnth")[i].addEventListener("click", () => {
-
-//         })
-//     }
-// }
-// for(let a = 1; a < leng; a++) {
-//     let saveshow = document.getElementById(`save${a}`);
-//     let dayshowinp = document.getElementById(`dayshowinp${a}`);
-//     let spendmnyshow = document.getElementById(`spendmnyshow${a}`);
-//     let editspend = document.getElementById(`editspend${a}`);
-    
-    
-    
-// }
-// for(let a = 1; a < leng; a++) {
-//     let saveshow = document.getElementById(`save${a}`);
-//     let dayshowinp = document.getElementById(`dayshowinp${a}`);
-//     let spendmnyshow = document.getElementById(`spendmnyshow${a}`);
-//     let editspend = document.getElementById(`editspend${a}`);
-    
-    
-    
-// }
-// monthObj = des(localStorage.getItem("monthObj"));
-// monthObj["month1"]["expns"]["1expn1"]["details"]["1"] = null;
-// localStorage.setItem("monthObj", str(monthObj))
